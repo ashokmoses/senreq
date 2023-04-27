@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Requisition</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/app.js" defer></script>
+</head>
+<body>
+
+    <!-- GENERAL PURPOSE POP UP   -->
+
+
+    <div class="pop-up-cont">
+    <div class="pop-up-hdr">
+        <div class="close-icon" onclick="closePopUp()"></div> 
+    </div>
+    <div class="pop-up-body "></div>
+    </div> <!-- pop-up-cont END-->
+
+        <!-- GENERAL PURPOSE POP UP END  -->
+
+
+    <div class="main-cont" style="transition: filter 0.4s ease;">
+        
+        <div class="nav-bar flex-row-space-between">
+            <div class="logo"></div>
+            <div class="nav-btn-cont"></div>
+        </div>
+
+        <div class="fixed-cont">
+            <div class="moving-frame">
+                <div class="page-1">
+
+                    <div class="sensor-req-cont flex-col-space-around">
+                        <div class="cont-sml">
+                                <div class="cont-hdr flex-row-center">
+                                    <span class="hdr-sml">REQUISITION DETAILS</span>
+                                </div>
+
+                                <div class="cont-bdy"></div>
+                        </div> <!-- cont-sml END -->
+                        <div class="cont-lrg">
+                            <div class="cont-hdr" style="display: flex;">
+                                <div class="sensor-det-cont flex-row-center"> 
+                                    <span class="hdr-sml">SENSOR DETAILS</span>
+                                </div> <!--sensor-det-cont END-->
+                                <div class="add-make-btn-cont flex-row-center">
+                                    <button class="btn btn-blue btn-med" title="Click To Add Another Make">
+                                        ADD MAKE/LOT
+                                    </button>
+                                 </div><!-- add-make-btn-cont END -->
+                            </div> <!--cont-hdr END-->
+
+                            <div class="cont-bdy" style="overflow: auto;">
+                                <table>
+                                    <tr>
+                                        <th>S.NO</th>
+                                        <th>SELECT MAKE</th>
+                                        <th>SELECT MODEL</th>
+                                        <th>SELECT SENSOR NOs</th>
+                                        <th>SELECTED SENSOR NOs </th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                    <tbody id='mainTable'>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                        
+                    <div class="cont-sml">
+
+                    </div><!-- cont-sml END -->
+                    </div> <!-- sensor-req-cont END-->
+
+
+
+                </div> <!--'page-1' END -->
+            </div> <!-- 'moving-frame' END -->
+        </div> <!--'fixed-cont' END -->
+ 
+    </div> <!-- 'main-cont' END -->
+
+</body>
+</html>
